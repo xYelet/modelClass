@@ -1,7 +1,7 @@
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, classification_report
 
 class KNNSimplePipeline:
     def __init__(self, df, target, test_size=0.2, random_state=None):
@@ -11,6 +11,7 @@ class KNNSimplePipeline:
         self.random_state = random_state
         self.accuracy = None
 
+        print(self.df['CODE_MISSPAY'].value_counts())
         self.run_knn_pipeline()
 
     def preprocess_data(self):
@@ -39,6 +40,7 @@ class KNNSimplePipeline:
 
         y_pred = knn.predict(X_test)
         accuracy = accuracy_score(y_test, y_pred)
+        print("rp test\n", classification_report(y_test, y_pred))
         print(f'Accuracy: {accuracy}')
 
         self.accuracy = accuracy

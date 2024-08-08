@@ -6,8 +6,8 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import pandas as pd
 import matplotlib.pyplot as plt
 
-class KNNPredict:
-    def __init__(self, df, target, test_size=0.2, random_state=None):
+class KnnBestNeighbor:
+    def __init__(self, df, target, test_size=0.25, random_state=None):
         self.df = df
         self.target = target
         self.test_size = test_size
