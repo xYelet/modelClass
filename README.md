@@ -1,2 +1,2 @@
-# regressionClass
+# modelClass
  
