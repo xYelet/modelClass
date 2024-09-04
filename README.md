@@ -1,15 +1,14 @@
+# Model Pipeline Class
 
-Model Pipeline Class
-
-Overview
+## Overview
 
 This repository contains a Python module designed for building and evaluating machine learning models. The module features two main classes: a Regression Pipeline and a K-Nearest Neighbors (KNN) Classification Pipeline. These classes encapsulate the entire process, from data preprocessing to model evaluation, providing a streamlined and reusable approach to model development.
 
-Installation
+## Installation
 
 Ensure that you have the necessary Python packages installed. You can install them using pip:
 
-pip install pandas matplotlib seaborn scikit-learn numpy
+```pip install pandas matplotlib seaborn scikit-learn numpy```
 
 Libraries
 
@@ -50,24 +49,24 @@ Regression Pipeline
 
 from your_module_name import RegressionPipeline
 
-# Initialize the pipeline
+## Initialize the pipeline
 regression_pipeline = RegressionPipeline()
 
-# Fit the model
+## Fit the model
 regression_pipeline.fit(X_train, y_train)
 
-# Evaluate the model
+## Evaluate the model
 regression_pipeline.evaluate(X_test, y_test)
 
 KNN Classification Pipeline
 
 from your_module_name import KnnClassificationPipeline
 
-# Initialize the pipeline
+## Initialize the pipeline
 knn_pipeline = KnnClassificationPipeline()
 
-# Fit the model
+## Fit the model
 knn_pipeline.fit(X_train, y_train)
 
-# Evaluate the model
+## Evaluate the model
 knn_pipeline.evaluate(X_test, y_test)
