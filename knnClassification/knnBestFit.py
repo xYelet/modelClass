@@ -24,7 +24,6 @@ class KnnBestFit:
         self.y_pred = None
         self.y_test = None
 
-        # Run the pipeline automatically upon initialization
         self.run_bestfit_knn_pipeline()
 
 
